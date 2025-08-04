@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form with Lists, Tables & Media</title>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Showcase Page</h1>
+    <p>This page demonstrates HTML5 lists, tables, media, and a complete form.</p>
+</header>
+
+<!-- Section with Lists -->
+<section>
+    <h2>Features of Our Service</h2>
+    <ul>
+        <li>Fast and Reliable Service</li>
+        <li>24/7 Customer Support</li>
+        <li>Affordable Pricing Plans</li>
+    </ul>
+
+    <h3>Steps to Get Started:</h3>
+    <ol>
+        <li>Create an account</li>
+        <li>Choose a plan</li>
+        <li>Enjoy our services</li>
+    </ol>
+</section>
+
+<!-- Section with Table -->
+<section>
+    <h2>Pricing Table</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Plan</th>
+                <th>Price</th>
+                <th>Benefits</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Basic</td>
+                <td>$10/month</td>
+                <td>Email Support</td>
+            </tr>
+            <tr>
+                <td>Pro</td>
+                <td>$30/month</td>
+                <td>Email + Chat Support</td>
+            </tr>
+            <tr>
+                <td>Premium</td>
+                <td>$50/month</td>
+                <td>24/7 Support + Dedicated Manager</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Section with Media -->
+<section>
+    <h2>Media Showcase</h2>
+    <img src="" alt="Fleurist">
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <video width="400" height="300" controls>
+        <source src="https://videos.pexels.com/video-files/19068664/19068664-hd_1080_1920_30fps.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+</section>
+
+<!-- HTML5 Form -->
+<section>
+    <h2>Register with Us</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required minlength="3"><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+123456789" pattern="^\+?[0-9]{7,15}$" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Details</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required minlength="5" maxlength="15" autocomplete="username"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8" placeholder="Minimum 8 characters"><br><br>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required minlength="8"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="plan">Choose a Plan:</label>
+            <select id="plan" name="plan" required>
+                <option value="">--Select a Plan--</option>
+                <option value="basic">Basic</option>
+                <option value="pro">Pro</option>
+                <option value="premium">Premium</option>
+            </select><br><br>
+
+            <label>Subscribe to Newsletter:</label><br>
+            <input type="radio" id="yes" name="newsletter" value="yes" required>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="newsletter" value="no" required>
+            <label for="no">No</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" placeholder="Your comments..."></textarea>
+        </fieldset><br>
+
+        <button type="submit">Submit Form</button>
+    </form>
+</section>
+
+</body>
+</html>
